@@ -1,0 +1,98 @@
+  q1  
+package main
+
+import "fmt"
+
+// Faça um algoritmo que imprima os números de 1 a 10 em ordem crescente.
+func main() {
+	for i := 1; i <= 10; i++ {
+		fmt.Println(i)
+	}
+
+}
+
+
+Q10
+
+package main
+
+import "fmt"
+
+func main() {
+	var x, y int
+	fmt.Println("digite varios numeros, caso queira parar digite 0")
+	for {
+		fmt.Scan(&y)
+		if y == 0 {
+			fmt.Println(x, "é o maior")
+			break
+		}
+		if y > x {
+			x = y
+		}
+
+	}
+
+}
+
+Q2
+
+package main
+
+import "fmt"
+
+// Faça um algoritmo que imprima os números pares de 0 a 20.
+func main() {
+	for i := 0; i <= 20; i += 2 {
+		fmt.Println(i)
+	}
+
+}
+
+Q8
+
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Println("diga um número inteiro")
+	fmt.Scan(&x)
+	for i := 1; i <= x; i++ {
+		if x%i == 0 {
+			fmt.Printf("divisor de %d: %d\n", x, i)
+
+		}
+
+	}
+
+}
+
+Q9
+
+package main
+
+import "fmt"
+
+func main() {
+	var x, y, z int
+	fmt.Println("digite varios numeros, caso queira parar digite 0")
+	for {
+		fmt.Scan(&y)
+		if y == 0 {
+			break
+		}
+		x += y
+		z++
+	}
+	if z == 0 {
+		fmt.Println("nenhum numero foi inserido")
+
+	} else {
+		media := x / z
+		fmt.Println("a media é", media)
+
+	}
+
+}
